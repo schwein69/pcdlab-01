@@ -24,7 +24,7 @@ public class SimpleClock extends Thread {
 	
 	public void notifyStop() {
 		stopped = true;
-		interrupt();
+		interrupt();//risveglia il thread che precedentemente si è messo in pausa
 	}
 	
 	private void waitAbit() {
